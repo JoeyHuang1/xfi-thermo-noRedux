@@ -4,7 +4,14 @@ To run the code Download the code, then
 
 npm install
 
-yarn serve
+npm start
+
+npm start
+
+To run unit tests,
+
+npm test (or npm test src/*.test.js)
+
 
 Pre-requisites:
 
