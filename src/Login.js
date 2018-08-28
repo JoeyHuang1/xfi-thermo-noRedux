@@ -23,13 +23,8 @@ class Login extends React.Component {
     this.setState({loginClass:'blinkClass'})
     try {
       let respObj = await loginService(account, password)
-      if (respObj.access_token) {
-        this.setState({errMsg: '', loginClass:''})
-        this.props.onSubmit(respObj.access_token, respObj.fullName)
-      }
-      else {
-        this.setState({errMsg: loginErrMsg, loginClass:''})
-      }
+      this.setState({errMsg: '', loginClass:''})
+      this.props.onSubmit(respObj.access_token, respObj.fullName)
     } catch(e) {
       console.log(new Error(e))
       this.setState({errMsg: loginErrMsg, loginClass:''})
