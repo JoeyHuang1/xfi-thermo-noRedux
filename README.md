@@ -26,5 +26,5 @@ npm test (or npm test src/*.test.js)
 * Add Nest to your Stringify account in the Stringify app
 
 
-Note:
+#### Note:
 Did not add responsive layout. Please reference https://github.com/JoeyHuangOne/xfi-thermo-redux for the responsive layout implementation.
